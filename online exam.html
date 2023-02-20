@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>online exam</title>
+</head>
+<body>
+ <u><h1 style="text-align: center;">ONLINE EXAM </h1> </u>
+ <div style="margin: 100px;">
+  <h3  style="font-size: 25px;">1)Dandi March started on ?</h3>
+  <input type="radio" name="q1">(A) March 10, 1930<br>
+  <input type="radio" name="q1" id="a">(B) March 12, 1930<br>
+  <input type="radio" name="q1">(C) March 10, 1931<br>
+  <input type="radio" name="q1">(D) March 12, 1931<br>
+  <h3 style="font-size: 25px;">2)Which of the following countries built the ternary? </h3>
+  <input type="radio" name="q2" id="b">A) Italy<br>
+  <input type="radio" name="q2">(B) Austria<br>
+  <input type="radio" name="q2">(C) Germany<br>
+  <input type="radio" name="q2">(D) All these<br>
+  <h3 style="font-size: 25px;">3)Which Lok Sabha is currently located in India?</h3>
+  <input type="radio" name="q3">(A)16<br>
+  <input type="radio" name="q3">(B)17<br>
+  <input type="radio" name="q3" id="c">(C)18<br>
+  <input type="radio" name="q3">(D)19<br>
+  
+<h3 style="font-size: 25px;">4)Total numbers of players in a football team is?</h3>
+  <input type="radio" name="q4">8<br>
+  <input type="radio" name="q4">12<br>
+  <input type="radio" name="q4">10<br>
+  <input type="radio" name="q4" id="d">11<br>
+  <h3 style="font-size: 25px;">5)Current Champions of FIFA WORLD CUP</h3>
+  <input type="radio" name="q5" id="e">France<br>
+  <input type="radio" name="q5">Germany<br>
+  <input type="radio" name="q5">Spain<br>
+  <input type="radio" name="q5">England<br>
+  <h3 style="font-size: 25px;">After how many years do FIFA conduct world cup</h3>
+  <input type="radio" name="q6">2<br>
+  <input type="radio" name="q6" id="f">4<br>
+  <input type="radio" name="q6">5<br>
+  <input type="radio" name="q6">7<br><br>
+  <input type="button" value="submit" onclick="result()">
+</div>
+<script>
+    function result(){
+        var score=0;
+ if(document.getElementById("a").checked){
+            score++;
+ }
+if(document.getElementById("b").checked){
+               score++;
+} 
+ if(document.getElementById("c").checked){
+               score++;
+         
+  }   
+ if(document.getElementById("d").checked){
+             score++;
+}  
+        if(document.getElementById("f").checked){
+               score++;
+}  
+        if(document.getElementById("e").checked){
+                score++;
+} 
+        document.write("SCORE=",score);  
+}
+</script>
+</body> 
+</html>

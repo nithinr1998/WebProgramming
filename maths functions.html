@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Java Script</title>
+<style>
+h2
+{color:blue;}
+h3
+{color:red;}
+</style>
+</head>
+<body>
+<center>
+<h1 id="hai">JAVA SCRIPT</h1>
+
+<p id="p1">Hello Nithin, Hows this day goes for you</p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p0"></p>
+<button id="but1" onclick="Fct1()" >CLICK</button><br><br>
+
+<script>
+var person={
+firstName:"Nithin",
+lastName:"Rajappan",
+age:23,
+eyecolour:"Blue"
+}
+document.write("<h2>"+"First Name :"+person.firstName+"<br>"+"Last Name :"+person.lastName+"</h2>")
+document.write("<h3>"+"Age :"+person.age+"<br>"+"Eyecolour :"+person.eyecolour+"</h3>")
+
+</script>
+</center>
+<script>
+var a=person.firstName
+var str="This is a test messege test"
+var c=50
+var d=150.250
+document.write("To use 'length'     :")
+document.write(person.firstName.length)
+document.write("<br>")
+document.write("To use 'indexOf'     :")
+document.write(str.indexOf("test"))
+document.write("<br>")
+document.write("To use 'lastIndexOf'     :")
+document.write(str.lastIndexOf("test"))
+document.write("<br>")
+document.write("To use 'slice'     :")
+var cut1=str.slice(5,20)
+document.write(cut1)
+document.write("<br>")
+document.write("To use 'substr'    :")
+var cut2=str.substr(5,7)
+document.write(cut2)
+document.write("<br>")
+document.write("To use 'replace'   :")
+var cut3=str.replace("test","hello")
+document.write(cut3)
+document.write("<br>")
+document.write("To use 'toUpperCase'    :")
+var cut4=str.toUpperCase()
+document.write(cut4)
+document.write("<br>")
+document.write("To use 'toLowerCase'    :")
+var cut5=str.toLowerCase()
+document.write(cut5)
+document.write("<br>")
+document.write("To use 'concat'    :")
+var word1="Nithin"
+var word2="Rajappan"
+var word3=word1.concat(" ",word2)
+document.write(word3)
+document.write("<br>")
+document.getElementById("p1").innerHTML="MCA"
+document.getElementById("hai").innerHTML="Amal jyothi"
+
+</script>
+<br><br>
+<script>
+document.write("To use Different MATH FUNCTIONS    :")
+document.write("<br>")
+document.write(Math.PI)
+document.write("<br>")
+var radius=12
+var area=(Math.PI*radius*radius)
+document.getElementById("p2").innerHTML="The Area of the circle with radius "+radius +" 	is :" + Math.round(area);
+document.write("<br>")
+area=area+1;
+document.getElementById("p3").innerHTML="The Area of the circle with radius "+radius +" 	is :" + Math.ceil(area);
+document.write("<br>")
+document.write(Math.floor(area));
+document.write("<br>")
+document.write("Area is "+(Math.PI*Math.pow(radius,2)));
+document.write("<br>")
+document.write("Squrt is" + Math.ceil(Math.sqrt(Math.PI*Math.pow(radius,2))));
+document.write("<br>")
+n=-567.987
+document.write("Absolute value of "+n +" is "+Math.abs(-567.987));
+document.write("<br>")
+a=10;
+b=20;
+c=30;
+d=40;
+e=50;
+document.write("Minimum of "+a+","+b+","+c+","+d+","+e+" is :"+Math.min(a,b,c,d,e));
+document.write("<br>")
+document.write("Maximum of "+a+","+b+","+c+","+d+","+e+" is :"+Math.max(a,b,c,d,e));
+document.write("<br>")
+document.write("A Random number is :" + Math.random()*101);
+document.write("<br>")
+document.write("<h1>A Random Integer number is :" + Math.floor(Math.random()*101)+"</h1>");
+document.write("<br>")
+function Fct1()
+{
+	document.write("THIS IS A TEST MESSEGE");
+	document.getElementById("p0").innerHTML="THIS IS A TEST MESSEGE";	
+}
+
+document.write("<br>")
+</script>
+</center>
+</body>
+</html>
